@@ -1,5 +1,5 @@
 // import React from 'react'; // Bei Alternative zu JSX in jeder Component notwendig zu importieren!
-import Expenses from './components/Expenses';
+import Expenses from './components/Expenses/Expenses';
 
 function App() {
     const expenses = [
