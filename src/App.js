@@ -1,3 +1,4 @@
+// import React from 'react'; // Bei Alternative zu JSX in jeder Component notwendig zu importieren!
 import Expenses from './components/Expenses';
 
 function App() {
@@ -28,12 +29,23 @@ function App() {
         },
     ];
 
+    // JSX
     return (
         <div>
             <h2>Let's get started!</h2>
             <Expenses data={expenses} />
         </div>
     );
+
+    // Alternative zu JSX
+    /*
+    return React.createElement(
+        'div',
+        {},
+        React.createElement('h2', {}, "Let's get started!"),
+        React.createElement(Expenses, { items: expesnsess})
+    );
+    */
 }
 
 export default App;
