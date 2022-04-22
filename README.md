@@ -1,70 +1,33 @@
-# Getting Started with Create React App
+# Chapters done of Udemy course [React - The Complete Guide](https://www.udemy.com/course/react-the-complete-guide-incl-redux)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+-   [x] 1. Getting Started (1-10)
+-   [x] 2. JavaScript Refresher (11-23)
+-   [] 3. React Basics & Working With Components (24-45)
+-   [] 4. React State & Working with Events
+-   [] 5. Rendering Lists & Conditional Content
+-   [] 6. Styling React Components
+-   [] 7. Debugging React Apps
+-   [] 8. Time to Practice: A Complete Practive Project
+-   [] 9. Diving Deeper: Working with Fragments, Portals & "Refs"
+-   [] 10. Advanced: Handling Side Effects, Using Reducers & Using Context API
+-   [] 11. Practice Project: Building a Food Order App
+-   [] 12. A Look Behind The Scenes Of React & Optimization Techniques
+-   [] 13. An Alternative Way Of Building Components: Class-based Components
+-   [] 14. Sending Http Requests (e.g. Connecting to a Database)
+-   [] 15. Building Custom React Hooks
+-   [] 16. Working with Forms & User Input
+-   [] 17. Practive Project: Adding Http & Forms To The Food Order App
+-   [] 18. Diving into Redux (An Alternative To The Context API)
+-   [] 19. Advanced Redux
+-   [] 20. Building a Multi-Page SPA with React Router
+-   [] 21. Deploying React Apps
+-   [] 22. Adding Authentication To React Apps
+-   [] 23. A (Pretty Deep Dive) Introducton to Next.js
+-   [] 24. Animating React Apps
+-   [] 25. Replacing Redux with React Hoos
+-   [] 26. Testing React Apps (Unit Tests)
+-   [] 27. React + TypeScript
+-   [] 28. Optional: React Hooks Introduction & Summary
+-   [] 29. Optional: React Summary & Core Feature Walktrough
+-   [] 30. Course Roundup
+-   [] 31. This Cours Got Updated!
