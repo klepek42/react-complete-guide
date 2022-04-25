@@ -4,7 +4,7 @@
 
 -   [x] 1. Getting Started (1-10)
 -   [x] 2. JavaScript Refresher (11-23)
--   [ ] 3. React Basics & Working With Components (24-45)
+-   [x] 3. React Basics & Working With Components (24-45)
 -   [ ] 4. React State & Working with Events
 -   [ ] 5. Rendering Lists & Conditional Content
 -   [ ] 6. Styling React Components

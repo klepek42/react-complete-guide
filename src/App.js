@@ -1,7 +1,7 @@
 // import React from 'react'; // Bei Alternative zu JSX in jeder Component notwendig zu importieren!
 import Expenses from './components/Expenses/Expenses';
 
-function App() {
+const App = () => {
     const expenses = [
         {
             id: 'e1',
@@ -46,6 +46,6 @@ function App() {
         React.createElement(Expenses, { items: expesnsess})
     );
     */
-}
+};
 
 export default App;
