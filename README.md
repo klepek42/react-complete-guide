@@ -5,11 +5,11 @@
 -   [x] 1. Getting Started (1-10)
 -   [x] 2. JavaScript Refresher (11-23)
 -   [x] 3. React Basics & Working With Components (24-45)
--   [ ] 4. React State & Working with Events
--   [ ] 5. Rendering Lists & Conditional Content
--   [ ] 6. Styling React Components
--   [ ] 7. Debugging React Apps
--   [ ] 8. Time to Practice: A Complete Practive Project
+-   [ ] 4. React State & Working with Events (46-62)
+-   [ ] 5. Rendering Lists & Conditional Content (63-73)
+-   [ ] 6. Styling React Components (74-82)
+-   [ ] 7. Debugging React Apps (83-88)
+-   [ ] 8. Time to Practice: A Complete Practive Project (89-99)
 -   [ ] 9. Diving Deeper: Working with Fragments, Portals & "Refs"
 -   [ ] 10. Advanced: Handling Side Effects, Using Reducers & Using Context API
 -   [ ] 11. Practice Project: Building a Food Order App
