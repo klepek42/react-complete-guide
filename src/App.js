@@ -1,4 +1,7 @@
-// import React from 'react'; // Bei Alternative zu JSX in jeder Component notwendig zu importieren!
+// Bei Alternative zu JSX in jeder Component notwendig zu importieren!
+import React from 'react';
+
+import NewExpense from './components/NewExpense/NewExpense';
 import Expenses from './components/Expenses/Expenses';
 
 const App = () => {
@@ -32,7 +35,7 @@ const App = () => {
     // JSX
     return (
         <div>
-            <h2>Let's get started!</h2>
+            <NewExpense />
             <Expenses data={expenses} />
         </div>
     );
