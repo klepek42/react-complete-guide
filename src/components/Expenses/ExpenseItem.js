@@ -7,6 +7,7 @@ import './ExpenseItem.css';
 const ExpenseItem = (props) => {
     // Hook
     const [title, setTitle] = useState(props.title); // Set default value
+    console.log('ExpenseItem evaluated by React');
 
     const clickHandler = () => {
         setTitle('Updated!');
