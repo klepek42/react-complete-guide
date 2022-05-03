@@ -32,4 +32,4 @@
 -   [ ] 28. Optional: React Hooks Introduction & Summary (422-450)
 -   [ ] 29. Optional: React Summary & Core Feature Walktrough (451-487)
 -   [ ] 30. Course Roundup (488-491)
--   [ ] 31. This Cours Got Updated! (492-294)
+-   [ ] 31. This Cours Got Updated! (492-494)
