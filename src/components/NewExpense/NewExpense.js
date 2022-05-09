@@ -11,6 +11,10 @@ const NewExpense = (props) => {
         props.onAddExpense(expenseData);
     };
 
+    const cancelHandler = () => {
+        return;
+    };
+
     return (
         <div className="new-expense">
             <ExpenseForm onSaveExpenseData={saveExpenseDataHandler} />

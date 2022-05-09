@@ -39,6 +39,11 @@ const App = () => {
         });
     };
 
+    const cancelExpenseHandler = () => {
+        console.log('cancelExpenseHandler');
+        return;
+    };
+
     // JSX
     return (
         <div>
