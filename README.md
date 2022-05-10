@@ -8,7 +8,7 @@
 -   [x] 4. React State & Working with Events (46-62)
 -   [x] 5. Rendering Lists & Conditional Content (63-73)
 -   [x] 6. Styling React Components (74-82)
--   [ ] 7. Debugging React Apps (83-88)
+-   [x] 7. Debugging React Apps (83-88)
 -   [ ] 8. Time to Practice: A Complete Practive Project (89-99)
 -   [ ] 9. Diving Deeper: Working with Fragments, Portals & "Refs" (100-108)
 -   [ ] 10. Advanced: Handling Side Effects, Using Reducers & Using Context API (109-130)
