@@ -1,16 +1,16 @@
 import React from "react";
 
 import NewUserForm from "./NewUserForm";
-import Button from "./Button";
 import styles from "./NewUser.module.css";
 
-const NewUser = () => {
-  const addBenutzerHandler = () => {};
+const NewUser = (props) => {
+  const addUserHandler = (newUser) => {
+    props.onAddUser(newUser);
+  };
 
   return (
     <div className={styles["new-user-panel"]}>
-      <NewUserForm />
-      <Button onClick={addBenutzerHandler}>Benutzer hinzufügen</Button>
+      <NewUserForm onAddUser={addUserHandler} />
     </div>
   );
 };
