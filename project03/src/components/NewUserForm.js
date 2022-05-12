@@ -17,6 +17,31 @@ const NewUserForm = (props) => {
 
   const formSubmitHandler = (event) => {
     event.preventDefault();
+
+    if (!username && !age) {
+      console.log("Error! Missing username and age!");
+      if (age < 1) {
+        console.log("Error! Invalid age!");
+      }
+      return;
+    }
+    if (!username) {
+      console.log("Error! Missing username!");
+      if (age < 1) {
+        console.log("Error! Invalid age!");
+      }
+      return;
+    }
+    if (!age) {
+      console.log("Error! Missing age!");
+      return;
+    }
+
+    if (age < 1) {
+      console.log("Error! Invalid age!");
+      return;
+    }
+
     const newUser = { username: username, age: age };
     props.onAddUser(newUser);
 
