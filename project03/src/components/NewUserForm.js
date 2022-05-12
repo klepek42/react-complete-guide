@@ -19,16 +19,19 @@ const NewUserForm = (props) => {
     event.preventDefault();
     const newUser = { username: username, age: age };
     props.onAddUser(newUser);
+
+    setUsername("");
+    setAge("");
   };
 
   return (
     <div className={styles["new-user-form-panel"]}>
       <form onSubmit={formSubmitHandler}>
         <label>Benutzername</label>
-        <input type="text" onChange={changeUsername} />
+        <input type="text" value={username} onChange={changeUsername} />
         <br />
         <label>Alter (Jahre)</label>
-        <input type="number" onChange={changeAge} />
+        <input type="number" value={age} onChange={changeAge} />
         <Button type="submit" text="Benutzer hinzufügen" />
       </form>
     </div>
