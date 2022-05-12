@@ -10,7 +10,11 @@ const NewUser = (props) => {
 
   return (
     <div className={styles["new-user-panel"]}>
-      <NewUserForm onAddUser={addUserHandler} />
+      <NewUserForm
+        onAddUser={addUserHandler}
+        showModal={props.showModal}
+        setShowModal={props.setShowModal}
+      />
     </div>
   );
 };

@@ -4,13 +4,9 @@ import NewUser from "./components/NewUser";
 import UserList from "./components/UserList";
 import styles from "./App.module.css";
 
-const DEMO_USERS = [
-  //{ username: "Gandalf", age: 11000 },
-  //{ username: "Elon Musk", age: 50 },
-];
-
 function App() {
-  const [users, setUsers] = useState(DEMO_USERS);
+  const [users, setUsers] = useState([]);
+  const [showModal, setShowModal] = useState(false);
 
   const addUserHandler = (newUser) => {
     setUsers((prevUsers) => {
@@ -19,9 +15,15 @@ function App() {
   };
 
   return (
-    <div className={styles["core"]}>
-      <NewUser onAddUser={addUserHandler} />
-      <UserList users={users} />
+    <div className={styles.core}>
+      <div className={showModal ? styles.darkBG : ""}>
+        <NewUser
+          onAddUser={addUserHandler}
+          showModal={showModal}
+          setShowModal={setShowModal}
+        />
+        <UserList users={users} />
+      </div>
     </div>
   );
 }

@@ -5,3 +5,9 @@
     max-width: 90%;
     margin: 3rem auto;
 }
+
+.darkBG {
+    z-index: 1000;
+    opacity: 0.3;
+    background-color: transparent;
+}
