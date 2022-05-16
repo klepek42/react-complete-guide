@@ -16,7 +16,7 @@ function App() {
 
   return (
     <div className={styles.core}>
-      <div className={showModal ? styles.darkBG : ""}>
+      <div>
         <NewUser
           onAddUser={addUserHandler}
           showModal={showModal}

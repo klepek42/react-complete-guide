@@ -20,25 +20,21 @@ const NewUserForm = (props) => {
   const formSubmitHandler = (event) => {
     event.preventDefault();
 
-    if (!username && !age) {
-      console.log("Error! Missing username and age!");
+    if (!username.trim().length && !age) {
       setIsError("MISSING_USERNAME_AND_AGE");
       props.setShowModal(true);
       return;
-    } else if (!username) {
-      console.log("Error! Missing username!");
+    } else if (!username.trim().length) {
       setIsError("MISSING_USERNAME");
       props.setShowModal(true);
       return;
     } else if (!age) {
-      console.log("Error! Missing age!");
       setIsError("MISSING_AGE");
       props.setShowModal(true);
       return;
     }
 
     if (age < 1) {
-      console.log("Error! Invalid age!");
       setIsError("INVALID_AGE");
       props.setShowModal(true);
       return;
@@ -54,11 +50,16 @@ const NewUserForm = (props) => {
   return (
     <div className={styles["new-user-form-panel"]}>
       <form onSubmit={formSubmitHandler}>
-        <label>Benutzername</label>
-        <input type="text" value={username} onChange={changeUsername} />
+        <label htmlFor="username">Benutzername</label>
+        <input
+          id="username"
+          type="text"
+          value={username}
+          onChange={changeUsername}
+        />
         <br />
-        <label>Alter (Jahre)</label>
-        <input type="number" value={age} onChange={changeAge} />
+        <label htmlFor="age">Alter (Jahre)</label>
+        <input id="age" type="number" value={age} onChange={changeAge} />
         <Button type="submit" text="Benutzer hinzufügen" />
       </form>
       {props.showModal && isError === "MISSING_USERNAME_AND_AGE" && (

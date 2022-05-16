@@ -10,7 +10,7 @@ const ModalErrorMessage = (props) => {
 
   return (
     <div>
-      <div />
+      <div className={styles.backgroundOverlay} />
       <div className={styles.centered}>
         <div className={styles.modal}>
           <div className={styles.modalHeader}>{props.title}</div>

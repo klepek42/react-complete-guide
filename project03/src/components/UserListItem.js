@@ -6,7 +6,7 @@ const UserListItem = (props) => {
   return (
     <div className={styles["user-list-item"]}>
       <ul>
-        <li>
+        <li key={props.index}>
           {props.username} ({props.age} {props.age > 1 ? "Jahre" : "Jahr"} alt)
         </li>
       </ul>
