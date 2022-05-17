@@ -2,7 +2,7 @@
 
 ### Chapters done of [React - The Complete Guide](https://www.udemy.com/course/react-the-complete-guide-incl-redux)
 
-Progress: 91/497 = 18%
+Progress: 103/497 = 21%
 
 -   [x] 1. Getting Started (1-10)
 -   [x] 2. JavaScript Refresher (11-23)
@@ -11,7 +11,7 @@ Progress: 91/497 = 18%
 -   [x] 5. Rendering Lists & Conditional Content (63-73)
 -   [x] 6. Styling React Components (74-82)
 -   [x] 7. Debugging React Apps (83-88)
--   [ ] 8. Time to Practice: A Complete Practive Project (89-99)
+-   [x] 8. Time to Practice: A Complete Practive Project (89-99)
 -   [ ] 9. Diving Deeper: Working with Fragments, Portals & "Refs" (100-108)
 -   [ ] 10. Advanced: Handling Side Effects, Using Reducers & Using Context API (109-130)
 -   [ ] 11. Practice Project: Building a Food Order App (131-150)
