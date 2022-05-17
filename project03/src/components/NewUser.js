@@ -1,8 +1,8 @@
 import React from "react";
 
 import NewUserForm from "./NewUserForm";
-import styles from "./NewUser.module.css";
 import Wrapper from "./Helpers/Wrapper";
+import styles from "./NewUser.module.css";
 
 const NewUser = (props) => {
   const addUserHandler = (newUser) => {
@@ -10,8 +10,9 @@ const NewUser = (props) => {
   };
 
   return (
-    <Wrapper className={styles["new-user-panel"]}>
+    <Wrapper>
       <NewUserForm
+        className={styles["new-user-panel"]}
         onAddUser={addUserHandler}
         showModal={props.showModal}
         setShowModal={props.setShowModal}
