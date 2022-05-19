@@ -8,7 +8,7 @@ Progress: 108/497 = 22%
 -   [x] 2. JavaScript Refresher (11-23)
 -   [x] 3. React Basics & Working With Components (24-45)
 -   [x] 4. React State & Working with Events (46-62)
--   [x] 5. Rendering Lists & Conditional Content (63-73)
+-   [x] 5. Rendering Ligsts & Conditional Content (63-73)
 -   [x] 6. Styling React Components (74-82)
 -   [x] 7. Debugging React Apps (83-88)
 -   [x] 8. Time to Practice: A Complete Practive Project (89-99)
