@@ -10,10 +10,10 @@ function App() {
 
   return (
     <React.Fragment>
-      <MainHeader onLogout={logoutHandler} />
+      <MainHeader />
       <main>
-        {!isLoggedIn && <Login />}
-        {isLoggedIn && <Home />}
+        {!ctx.isLoggedIn && <Login />}
+        {ctx.isLoggedIn && <Home />}
       </main>
     </React.Fragment>
   );
