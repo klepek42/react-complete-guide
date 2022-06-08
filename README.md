@@ -2,7 +2,7 @@
 
 ### Chapters done of [React - The Complete Guide](https://www.udemy.com/course/react-the-complete-guide-incl-redux)
 
-Progress: 144/497 = 29%
+Progress: 153/497 = 31%
 
 -   [x] 1. Getting Started (1-10)
 -   [x] 2. JavaScript Refresher (11-23)
@@ -14,7 +14,7 @@ Progress: 144/497 = 29%
 -   [x] 8. Time to Practice: A Complete Practive Project (89-99)
 -   [x] 9. Diving Deeper: Working with Fragments, Portals & "Refs" (100-108)
 -   [x] 10. Advanced: Handling Side Effects, Using Reducers & Using Context API (109-130)
--   [ ] 11. Practice Project: Building a Food Order App (131-150)
+-   [x] 11. Practice Project: Building a Food Order App (131-150)
 -   [ ] 12. A Look Behind The Scenes Of React & Optimization Techniques (151-162)
 -   [ ] 13. An Alternative Way Of Building Components: Class-based Components (163-172)
 -   [ ] 14. Sending Http Requests (e.g. Connecting to a Database) (173-185)
