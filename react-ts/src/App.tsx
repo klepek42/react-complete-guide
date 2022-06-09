@@ -4,7 +4,7 @@ import "./App.css";
 function App() {
   return (
     <div>
-      <Todos />
+      <Todos items={["Learn React", "Learn TypeScript", "Learn Ruby"]} />
     </div>
   );
 }
