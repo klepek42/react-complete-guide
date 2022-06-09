@@ -10,3 +10,24 @@ userName = "Max";
 
 let isInstructor: boolean;
 isInstructor = true;
+
+// More complex types
+let hobbies: string[];
+hobbies = ["A", "B", "C"];
+
+let person: {
+  name: string;
+  age: number;
+};
+person = { name: "Max", age: 32 };
+
+// Wrong properties in object example
+// person = {
+//   isEmployee: true,
+// };
+
+// Array of people objects
+let people: {
+  name: string;
+  age: number;
+}[];
