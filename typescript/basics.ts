@@ -42,3 +42,12 @@ let course = "React - The Complete Guide";
 // Union Type
 let room: string | number = "123";
 room = 46;
+
+// Functions & types
+function add(a: number, b: number): number {
+  return a + b;
+}
+
+function printOutput(value: any): void {
+  console.log(value);
+}
