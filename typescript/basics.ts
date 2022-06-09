@@ -15,11 +15,17 @@ isInstructor = true;
 let hobbies: string[];
 hobbies = ["A", "B", "C"];
 
-let person: {
+// Type Alias
+type Person = {
   name: string;
   age: number;
 };
-person = { name: "Max", age: 32 };
+
+let person: Person;
+person = {
+  name: "Max",
+  age: 32,
+};
 
 // Wrong properties in object example
 // person = {
@@ -27,14 +33,12 @@ person = { name: "Max", age: 32 };
 // };
 
 // Array of people objects
-let people: {
-  name: string;
-  age: number;
-}[];
+let people: Person[];
 
 // Type inference
 let course = "React - The Complete Guide";
 // course = 12341;
 
+// Union Type
 let room: string | number = "123";
 room = 46;
