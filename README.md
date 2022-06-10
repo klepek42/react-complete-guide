@@ -2,7 +2,7 @@
 
 ### Chapters done of [React - The Complete Guide](https://www.udemy.com/course/react-the-complete-guide-incl-redux)
 
-Progress: 168/497 = 34%
+Progress: 174/497 = 35%
 
 -   [x] 1. Getting Started (1-10)
 -   [x] 2. JavaScript Refresher (11-23)
