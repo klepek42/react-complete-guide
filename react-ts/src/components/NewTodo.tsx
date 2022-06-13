@@ -13,7 +13,7 @@ const NewTodo = (props: Props) => {
     const enteredText = todoTextInputRef.current!.value;
 
     if (enteredText.trim().length === 0) {
-      // Thrown an error≠
+      // Thrown an error
       return;
     }
 
