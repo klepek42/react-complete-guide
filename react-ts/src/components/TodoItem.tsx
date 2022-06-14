@@ -5,12 +5,14 @@ import classes from "./TodoItem.module.css";
 interface Props {
   todo: Todo;
   name: string;
+  onRemoveTodo: () => void;
 }
 
-const TodoItem = ({ todo }: Props) => {
-  const { id, text } = todo;
+const TodoItem = (props: Props) => {
+  const { id, text } = props.todo;
+
   return (
-    <li className={classes.item} key={id}>
+    <li className={classes.item} key={id} onClick={props.onRemoveTodo}>
       {text}
     </li>
   );
