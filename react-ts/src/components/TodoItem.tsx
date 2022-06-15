@@ -1,19 +1,11 @@
-import React from "react";
-import Todo from "../models/todo";
 import classes from "./TodoItem.module.css";
 
-interface Props {
-  todo: Todo;
-  name: string;
-  onRemoveTodo: () => void;
-}
-
-const TodoItem = (props: Props) => {
-  const { id, text } = props.todo;
-
+const TodoItem: React.FC<{ text: string; onRemoveTodo: () => void }> = (
+  props
+) => {
   return (
-    <li className={classes.item} key={id} onClick={props.onRemoveTodo}>
-      {text}
+    <li className={classes.item} onClick={props.onRemoveTodo}>
+      {props.text}
     </li>
   );
 };
