@@ -16,7 +16,7 @@ function App() {
       const response = await fetch("https://swapi.dev/api/films/");
 
       if (!response.ok) {
-        πthrow new Error("Something went wrong here! Error " + response.status);
+        throw new Error("Something went wrong here! Error " + response.status);
       }
 
       const data = await response.json();
