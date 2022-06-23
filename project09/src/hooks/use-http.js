@@ -4,15 +4,14 @@ const useHttp = (requestConfig, applyData) => {
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState(null);
 
-  const sendRequests = async () => {
+  const sendRequest = async () => {
     setIsLoading(true);
     setError(null);
     try {
-      // "https://react-http-52d4d-default-rtdb.europe-west1.firebasedatabase.app/tasks.json"
       const response = await fetch(requestConfig.url, {
-        method: requestConfig.method,
-        headers: requestConfig.headers,
-        body: JSON.stringify(requestConfig.body),
+        method: requestConfig.method ? requestConfig.method : "GET",
+        headers: requestConfig.headers ? requestConfig.headers : {},
+        body: requestConfig.body ? JSON.stringify(requestConfig.body) : null,
       });
 
       if (!response.ok) {
@@ -29,7 +28,7 @@ const useHttp = (requestConfig, applyData) => {
   return {
     isLoading,
     error,
-    sendRequests,
+    sendRequest,
   };
 };
 
