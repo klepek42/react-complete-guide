@@ -2,7 +2,7 @@
 
 ### Chapters done of [React - The Complete Guide](https://www.udemy.com/course/react-the-complete-guide-incl-redux)
 
-Progress: 204/497 = 41%
+Progress: 215/497 = 43%
 
 -   [x] 1. Getting Started (1-10)
 -   [x] 2. JavaScript Refresher (11-23)
@@ -18,7 +18,7 @@ Progress: 204/497 = 41%
 -   [x] 12. A Look Behind The Scenes Of React & Optimization Techniques (151-162)
 -   [ ] 13. An Alternative Way Of Building Components: Class-based Components (163-172)
 -   [x] 14. Sending Http Requests (e.g. Connecting to a Database) (173-185)
--   [ ] 15. Building Custom React Hooks (186-196)
+-   [x] 15. Building Custom React Hooks (186-196)
 -   [ ] 16. Working with Forms & User Input (197-213)
 -   [ ] 17. Practice Project: Adding Http & Forms To The Food Order App (214-225)
 -   [ ] 18. Diving into Redux (An Alternative To The Context API) (226-249)
