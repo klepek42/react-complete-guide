@@ -30,7 +30,7 @@ export async function getStaticPaths() {
 
   const meetups = await meetupsCollection.find({}, { _id: 1 }).toArray();
 
-  client.close();
+  await client.close();
 
   return {
     fallback: "blocking",
@@ -55,7 +55,7 @@ export async function getStaticProps(context) {
     _id: ObjectId(meetupId),
   });
 
-  client.close();
+  await client.close();
 
   return {
     props: {

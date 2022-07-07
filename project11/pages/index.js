@@ -43,7 +43,7 @@ export async function getStaticProps() {
   const meetupsCollection = db.collection("meetups");
   const meetups = await meetupsCollection.find().toArray();
 
-  client.close();
+  await client.close();
 
   return {
     props: {
