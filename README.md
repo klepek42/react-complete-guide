@@ -26,7 +26,7 @@ Progress: 242/497 = 48%
 -   [ ] 20. Building a Multi-Page SPA with React Router (266-292)
 -   [ ] 21. Deploying React Apps (293-299)
 -   [ ] 22. Adding Authentication To React Apps (300-315)
--   [ ] 23. A (Pretty Deep Dive) Introduction to Next.js (316-350)
+-   [xπ] 23. A (Pretty Deep Dive) Introduction to Next.js (316-350)
 -   [ ] 24. Animating React Apps (351-366)
 -   [ ] 25. Replacing Redux with React Hooks (367-381)
 -   [ ] 26. Testing React Apps (Unit Tests) (382-395)
