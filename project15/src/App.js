@@ -26,7 +26,7 @@ function App() {
     }
 
     if (cart.changed) {
-      dispatch(sendCartData());
+      dispatch(sendCartData(cart));
     }
   }, [cart, dispatch]);
 

@@ -21,7 +21,7 @@ export const fetchCartData = () => {
       const cartData = await fetchData();
       dispatch(
         cartActions.replaceCart({
-          item: cartData.items || [],
+          items: cartData.items || [],
           totalQuantity: cartData.totalQuantity,
         })
       );
@@ -30,7 +30,7 @@ export const fetchCartData = () => {
         uiActions.showNotification({
           status: "error",
           title: "Error...",
-          message: "Sending cart data failed!",
+          message: "Fetching cart data failed!",
         })
       );
     }
@@ -74,6 +74,14 @@ export const sendCartData = (cart) => {
           message: "Sent cart data successfully!",
         })
       );
-    } catch (error) {}
+    } catch (error) {
+      dispatch(
+        uiActions.showNotification({
+          status: "error",
+          title: "Error!",
+          message: "Sending cart data failed!",
+        })
+      );
+    }
   };
 };
