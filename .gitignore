@@ -26,3 +26,7 @@ yarn-error.log*
 .idea/
 *.iml
 /.eslintcache
+
+# firebase
+/.firebase
+*.firebase

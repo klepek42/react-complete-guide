@@ -36,3 +36,6 @@ yarn-error.log*
 *.iml
 /.eslintcache
 
+# firebase
+/.firebase
+*.firebase
