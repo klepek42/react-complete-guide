@@ -2,7 +2,7 @@
 
 ### Chapters done of [React - The Complete Guide](https://www.udemy.com/course/react-the-complete-guide-incl-redux)
 
-Progress: 298/497 = 60%%
+Progress: 313/497 = 63%
 
 -   [x] 1. Getting Started (1-10)
 -   [x] 2. JavaScript Refresher (11-23)
@@ -25,7 +25,7 @@ Progress: 298/497 = 60%%
 -   [x] 19. Advanced Redux (250-265)
 -   [ ] 20. Building a Multi-Page SPA with React Router (266-292)
 -   [x] 21. Deploying React Apps (293-299)
--   [ ] 22. Adding Authentication To React Apps (300-315)
+-   [x] 22. Adding Authentication To React Apps (300-315)
 -   [x] 23. A (Pretty Deep Dive) Introduction to Next.js (316-350)
 -   [ ] 24. Animating React Apps (351-366)
 -   [ ] 25. Replacing Redux with React Hooks (367-381)
