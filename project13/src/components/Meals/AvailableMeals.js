@@ -5,6 +5,7 @@ import { useEffect, useState } from "react";
 
 const AvailableMeals = () => {
   const [meals, setMeals] = useState([]);
+  const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
     const fetchMeals = async () => {
@@ -12,10 +13,6 @@ const AvailableMeals = () => {
         "https://react-http-52d4d-default-rtdb.europe-west1.firebasedatabase.app/meals.json"
       );
       const responseData = await response.json();
-
-      console.log("response", response);
-      console.log("responseData", responseData);
-
       const loadedMeals = [];
 
       for (const key in responseData) {
@@ -28,11 +25,10 @@ const AvailableMeals = () => {
       }
 
       setMeals(loadedMeals);
+      setIsLoading(false);
     };
 
     fetchMeals();
-
-    console.log("meals", meals);
   }, []);
 
   const mealsList = meals.map((meal) => (
@@ -44,6 +40,14 @@ const AvailableMeals = () => {
       price={meal.price}
     />
   ));
+
+  if (isLoading) {
+    return (
+      <section className={classes.MealsLoading}>
+        <p>Loading...</p>
+      </section>
+    );
+  }
 
   return (
     <section className={classes.meals}>
