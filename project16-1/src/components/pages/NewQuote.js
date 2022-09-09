@@ -7,7 +7,7 @@ const NewQuote = () => {
   const addQuoteHandler = (quoteData) => {
     console.log(quoteData);
 
-    history.push();
+    history.push("/quotes");
   };
   return <QuoteForm onAddQuote={addQuoteHandler} />;
 };
