@@ -1,7 +1,7 @@
 import React from "react";
 
 import "./Modal.css";
-import { Transition } from "react-transition-group";
+import { CSSTransition } from "react-transition-group";
 
 const animationTiming = {
   enter: 400,
@@ -19,11 +19,12 @@ const modal = (props) => {
   ];
 
   return (
-    <Transition
+    <CSSTransition
       mountOnEnter
       unmountOnExit
       in={props.show}
       timeout={animationTiming}
+      classNames="fade-slied"
     >
       {(state) => {
         const cssClasses = [
@@ -43,7 +44,7 @@ const modal = (props) => {
           </div>
         );
       }}
-    </Transition>
+    </CSSTransition>
   );
 };
 
