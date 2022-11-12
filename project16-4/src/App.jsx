@@ -4,12 +4,13 @@ import {
   Route,
   RouterProvider,
 } from "react-router-dom";
+import ErrorPage from "./../src/pages/ErrorPage";
 
 import BlogLayout from "./pages/BlogLayout.jsx";
 import BlogPostsPage, {
   loader as blogPostsLoader,
 } from "./pages/BlogPosts.jsx";
-import NewPostPage from "./pages/NewPost.jsx";
+import NewPostPage, { action as newPostAction } from "./pages/NewPost.jsx";
 import PostDetailPage, {
   loader as blogPostLoader,
 } from "./pages/PostDetail.jsx";
@@ -18,7 +19,7 @@ import RootLayout from "./pages/RootLayout.jsx";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
-    <Route path="/" element={<RootLayout />}>
+    <Route path="/" element={<RootLayout />} errorElement={<ErrorPage />}>
       <Route index element={<WelcomePage />} />
       <Route path="/blog" element={<BlogLayout />}>
         <Route index element={<BlogPostsPage />} loader={blogPostsLoader} />
@@ -28,7 +29,11 @@ const router = createBrowserRouter(
           loader={blogPostLoader}
         />
       </Route>
-      <Route path="/blog/new" element={<NewPostPage />} />
+      <Route
+        path="/blog/new"
+        element={<NewPostPage />}
+        action={newPostAction}
+      />
     </Route>
   )
 );
