@@ -2,7 +2,7 @@
 
 ### Chapters done of [React - The Complete Guide](https://www.udemy.com/course/react-the-complete-guide-incl-redux)
 
-Progress: 388/498 = 78%
+Progress: 394/498 = 79%
 
 -   [x] 1. Getting Started (1-10)
 -   [x] 2. JavaScript Refresher (11-23)
@@ -23,7 +23,7 @@ Progress: 388/498 = 78%
 -   [x] 17. Practice Project: Adding Http & Forms To The Food Order App (214-225)
 -   [x] 18. Diving into Redux (An Alternative To The Context API) (226-249)
 -   [x] 19. Advanced Redux (250-265)
--   [ ] 20. Building a Multi-Page SPA with React Router (266-292)
+-   [x] 20. Building a Multi-Page SPA with React Router (266-292)
 -   [x] 21. Deploying React Apps (293-299)
 -   [x] 22. Adding Authentication To React Apps (300-315)
 -   [x] 23. A (Pretty Deep Dive) Introduction to Next.js (316-350)
