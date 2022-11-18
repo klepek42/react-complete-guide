@@ -25,6 +25,10 @@ const Ingredients = () => {
       });
   }, []);
 
+  useEffect(() => {
+    console.log("userIngredients changed");
+  }, [userIngredients]);
+
   const addIngredientHandler = (ingredient) => {
     fetch(
       "https://react-hooks-update-9792d-default-rtdb.europe-west1.firebasedatabase.app/ingredients.json",
