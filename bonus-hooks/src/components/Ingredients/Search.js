@@ -29,13 +29,9 @@ const Search = React.memo((props) => {
         loadedIngredients = loadedIngredients.filter(
           (loadedIngredient) => loadedIngredient.title === enteredFilter
         );
-        // onLoadIngredients(loadedIngredients);
+        onLoadIngredients(loadedIngredients);
       });
   }, [enteredFilter, onLoadIngredients]);
-
-  const filterChangeHandler = () => {
-    setEnteredFilter(enteredFilter);
-  };
 
   return (
     <section className="search">
