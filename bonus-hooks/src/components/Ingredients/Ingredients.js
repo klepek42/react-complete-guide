@@ -3,15 +3,19 @@ import React, { useCallback, useEffect, useState } from "react";
 import IngredientForm from "./IngredientForm";
 import Search from "./Search";
 import IngredientList from "./IngredientList";
+import ErrorModal from "../UI/ErrorModal";
 
 const Ingredients = () => {
   const [userIngredients, setUserIngredients] = useState([]);
+  const [isLoading, setIsLoading] = useState(false);
+  const [error, setError] = useState();
 
   useEffect(() => {
     console.log("userIngredients changed");
   }, [userIngredients]);
 
   const addIngredientHandler = (ingredient) => {
+    setIsLoading(true);
     fetch(
       "https://react-hooks-update-9792d-default-rtdb.europe-west1.firebasedatabase.app/ingredients.json",
       {
@@ -21,6 +25,7 @@ const Ingredients = () => {
       }
     )
       .then((response) => {
+        setIsLoading(false);
         return response.json();
       })
       .then((responseData) => {
@@ -39,21 +44,37 @@ const Ingredients = () => {
   }, []);
 
   const removeItemHandler = (ingredientId) => {
+    setIsLoading(true);
     fetch(
       `https://react-hooks-update-9792d-default-rtdb.europe-west1.firebasedatabase.app/ingredients/${ingredientId}.json`,
       {
         method: "DELETE",
       }
-    ).then((response) => {
-      setUserIngredients((prevIngredients) =>
-        prevIngredients.filter((ingredient) => ingredient !== ingredient.id)
-      );
-    });
+    )
+      .then((response) => {
+        setIsLoading(false);
+        setUserIngredients((prevIngredients) =>
+          prevIngredients.filter((ingredient) => ingredient !== ingredient.id)
+        );
+      })
+      .catch((error) => {
+        setError(error.message);
+        setIsLoading(false);
+      });
+  };
+
+  const clearError = () => {
+    setError(null);
   };
 
   return (
     <div className="App">
-      <IngredientForm onAddIngredient={addIngredientHandler} />
+      {error && <ErrorModal onClose={clearError}>{error}</ErrorModal>}
+
+      <IngredientForm
+        onAddIngredient={addIngredientHandler}
+        loading={isLoading}
+      />
 
       <section>
         <Search onLoadIngredients={filteredIngredientsHandler} />
