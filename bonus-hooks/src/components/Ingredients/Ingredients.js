@@ -21,44 +21,35 @@ const ingredientsReducer = (currentIngredients, action) => {
 
 const Ingredients = () => {
   const [userIngredients, dispatch] = useReducer(ingredientsReducer, []);
-  const { isLoading, error, data, sendRequest } = useHttp();
-
-  // const [userIngredients, setUserIngredients] = useState([]);
-  // const [isLoading, setIsLoading] = useState(false);
-  // const [error, setError] = useState();
+  const { isLoading, error, data, sendRequest, reqExtra, reqIdentifier } =
+    useHttp();
 
   useEffect(() => {
-    console.log("userIngredients changed");
-  }, [userIngredients]);
-
-  const addIngredientHandler = useCallback((ingredient) => {
-    // dispatchHttp({ type: "SEND" });
-    // fetch(
-    //   "https://react-hooks-update-9792d-default-rtdb.europe-west1.firebasedatabase.app/ingredients.json",
-    //   {
-    //     method: "POST",
-    //     body: JSON.stringify(ingredient),
-    //     headers: { "Content-Type": "application/json" },
-    //   }
-    // )
-    //   .then((response) => {
-    //     dispatchHttp({ type: "RESPONSE" });
-    //     return response.json();
-    //   })
-    //   .then((responseData) => {
-    //     dispatch({
-    //       type: "ADD",
-    //       ingredient: {
-    //         id: responseData.name,
-    //         ...ingredient,
-    //       },
-    //     });
-    //   });
-  }, []);
+    if (!isLoading && !error && reqIdentifier === "REMOVE_INGREDIENT") {
+      dispatch({ type: "DELETE", id: reqExtra });
+    } else if (!isLoading && !error && reqIdentifier === "ADD_INGREDIENT") {
+      dispatch({
+        type: "ADD",
+        ingredient: {
+          id: data.name,
+          ...reqExtra,
+        },
+      });
+    }
+  }, [data, reqExtra, reqIdentifier, isLoading, error]);
 
   const filteredIngredientsHandler = useCallback((filteredIngredients) => {
-    // setUserIngredients(filteredIngredients);
     dispatch({ type: "SET", ingredients: filteredIngredients });
+  }, []);
+
+  const addIngredientHandler = useCallback((ingredient) => {
+    sendRequest(
+      "https://react-hooks-update-9792d-default-rtdb.europe-west1.firebasedatabase.app/ingredients.json",
+      "POST",
+      JSON.stringify(ingredient),
+      ingredient,
+      "ADD_INGREDIENT"
+    );
   }, []);
 
   const removeIngredientHandler = useCallback(
@@ -66,7 +57,10 @@ const Ingredients = () => {
       // dispatchHttp({ type: "SEND" });
       sendRequest(
         `https://react-hooks-update-9792d-default-rtdb.europe-west1.firebasedatabase.app/ingredients/${ingredientId}.json`,
-        "DELETE"
+        "DELETE",
+        null,
+        ingredientId,
+        "REMOVE_INGREDIENT"
       );
     },
     [sendRequest]
