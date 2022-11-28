@@ -2,7 +2,7 @@
 
 ### Chapters done of [React - The Complete Guide](https://www.udemy.com/course/react-the-complete-guide-incl-redux)
 
-Progress: 413/498 = 83%
+Progress: 424/498 = 85%
 
 -   [x] 1. Getting Started (1-10)
 -   [x] 2. JavaScript Refresher (11-23)
@@ -31,7 +31,7 @@ Progress: 413/498 = 83%
 -   [ ] 25. Replacing Redux with React Hooks (367-381)
 -   [x] 26. Testing React Apps (Unit Tests) (382-395)
 -   [x] 27. React + TypeScript (396-421)
--   [ ] 28. Optional: React Hooks Introduction & Summary (422-450)
+-   [x] 28. Optional: React Hooks Introduction & Summary (422-450)
 -   [ ] 29. Optional: React Summary & Core Feature Walkthrough (451-487)
 -   [ ] 30. Course Roundup (488-491)
 -   [ ] 31. This Course Got Updated! (492-494)
