@@ -6,37 +6,10 @@ export const ProductsContext = React.createContext({
 });
 
 export default (props) => {
-  const [productsList, setProductsList] = useState([
-    {
-      id: "p1",
-      title: "Red Scarf",
-      description: "A pretty red scarf.",
-      isFavorite: false,
-    },
-    {
-      id: "p2",
-      title: "Blue T-Shirt",
-      description: "A pretty blue t-shirt.",
-      isFavorite: false,
-    },
-    {
-      id: "p3",
-      title: "Green Trousers",
-      description: "A pair of lightly green trousers.",
-      isFavorite: false,
-    },
-    {
-      id: "p4",
-      title: "Orange Hat",
-      description: "Street style! An orange hat.",
-      isFavorite: false,
-    },
-  ]);
+  const [productsList, setProductsList] = useState([]);
 
   const toggleFavorite = (productId) => {
     setProductsList((currentProdList) => {
-      console.log("currentProdList", currentProdList);
-      console.log("productId", productId);
       const prodIndex = currentProdList.findIndex((p) => p.id === productId);
       const newFavStatus = !currentProdList[prodIndex].isFavorite;
       const updatedProducts = [...currentProdList];

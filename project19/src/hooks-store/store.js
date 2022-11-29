@@ -8,8 +8,8 @@ export const useStore = () => {
   // Only interested in the updater function in order to update the global state and rerender the component that uses this custom hook
   const setState = useState(globalState)[1];
 
-  const dispatch = (actionIdentifier) => {
-    const newState = actions[actionIdentifier](globalState);
+  const dispatch = (actionIdentifier, payload) => {
+    const newState = actions[actionIdentifier](globalState, payload);
     globalState = { ...globalState, ...newState };
 
     for (const listener of listeners) {
