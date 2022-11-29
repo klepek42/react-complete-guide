@@ -1,11 +1,10 @@
-import React, { useContext } from "react";
+import React from "react";
 
 import Card from "../UI/Card";
 import "./ProductItem.css";
 import { useStore } from "../../hooks-store/store";
 
 const ProductItem = React.memo((props) => {
-  console.log("RENDERING");
   const dispatch = useStore(false)[1];
 
   const toggleFavHandler = () => {
